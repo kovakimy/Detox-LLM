@@ -1,0 +1,11 @@
+Mistral-7B-ReMax-v0.1:
+  prompt_template: "/home/sslashinin/kovakimyan/diploma/experiments/alpaca_configs/prompts.txt"
+  completions_kwargs:
+    model_name: "/home/sslashinin/kovakimyan/diploma/experiments/peft_fine_tuned_with_detoxification_rewards_mistral_/" # local path
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 0.9
+    do_sample: True
+  pretty_name: "Mistral-7B-v0.1"
